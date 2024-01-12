@@ -11,12 +11,12 @@ font-family: 'Work Sans', sans-serif;
 
 header{
     background: rgba(255, 144, 14, 0.10);
+    padding: 50px 230px;
 }
 
 nav{
     display: flex;
     justify-content: space-between;
-    padding: 50px 230px;
     align-items: center;
 }
 
@@ -58,8 +58,49 @@ nav li a{
      font-weight: 400;
 }
 
-.banner-container{
+.banner-content{
     max-width: 800px;
     text-align: center;
-    margin: 0px auto;
+    margin: 0 auto;
+}
+
+.btn-primary{
+    color: #FFF;
+    font-size: 1.25rem;
+    padding: 20px 25px;
+    border: 0;
+    border-radius: 8px;
+    background: #FF900E;
+    cursor: pointer;
+}
+
+.banner-img{
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+
+/* responsive-style */
+/* mobile-devise */
+@media screen and (max-width: 576px) {
+    header{
+       padding: 10px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    
+}
+
+/* tablet or medium devises */
+
+@media screen and (min-width: 576px) and (max-width: 990px) {
+    header{
+        padding: 50px;
+    }
+
+    nav{
+        flex-direction: column;
+    }
 }
